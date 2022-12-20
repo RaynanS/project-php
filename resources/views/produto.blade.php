@@ -21,53 +21,129 @@
                 font-family: 'Nunito', sans-serif;
             }
 
-            .formulario {
+            h3 {
+                color: white;
                 display: flex;
+                justify-content: center;
+                width: 90%;
+                margin: 0 auto;
+
             }
 
-            input[type=number]::-webkit-inner-spin-button,
-            input[type=number]::-webkit-outer-spin-button {
-             -webkit-appearance: none;
-             margin: 0;
+            .nivel1 {
+                display: flex;
+                justify-content: center;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            .item1, .item2, .item3 {
+                border: 2px solid white;
+                color: white;
+                width: 50%;
+                display: grid;
+                justify-content: center;
+                margin: 0 auto;
             }
 
         </style>
     </head>
     <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/home') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Home</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+        <div class="relative  items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
+            <h3>Nível 1</h3>
+            </br>
+            <div class="nivel1">
+                <div class="item1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Produto 1
+                        </label>
+                        <h1>R$250,10</h1>
+                    </div>
+                </div>
+                <div class="item2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Produto 2
+                            </label>
+                            <h1>R$500,10</h1>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            Produto 3
+                        </label>
+                        <h1>R$850,00</h1>
+                    </div>
+                </div>
+            </div>
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
+        <!--<h3>Nível 2</h3>
+            </br>
+            <div class="nivel2">
+                <div class="item1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Produto 1
+                        </label>
+                        <h1>R$350,00</h1>
+                    </div>
                 </div>
-            @endif
+                <div class="item2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Produto 2
+                            </label>
+                            <h1>R$650,00</h1>
+                    </div>
+                </div>
+                <div class="item3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            Produto 3
+                        </label>
+                        <h1>R$950,00</h1>
+                    </div>
+                </div>
+            </div>
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-            <form id="form">
-                <h2>Tipo de Usuário</h2>
-                <select class="form-select" aria-label="Default select example">
-                    <option selected>Selecione o Nível</option>
-                    <option value="1">Nível 1</option>
-                    <option value="2">Nível 2</option>
-                    <option value="3">Nível 3</option>
-                </select>
-                <br/>
-                <h2>CPF</h2>
-                <div class="col-sm-10">
-                     <input type="number" class="form-control" id="inputCPF">
+            <h3>Nível 3</h3>
+            </br>
+            <div class="nivel3">
+                <div class="item1">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Produto 1
+                        </label>
+                        <h1>R$450,00</h1>
+                    </div>
                 </div>
-                <br/>
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">Cadastrar</button>
+                <div class="item2">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Produto 2
+                            </label>
+                            <h1>R$750,00</h1>
+                    </div>
                 </div>
-            </form>
+                <div class="item3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                            Produto 3
+                        </label>
+                        <h1>R$1.050,00</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

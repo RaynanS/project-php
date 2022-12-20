@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +12,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses' => 'App\Http\Controllers\Controller@homepage']);
+Route::get('/cadastrar', ['uses' => 'App\Http\Controllers\Controller@cadastrar']);
+Route::get('/produto', ['uses' => 'App\Http\Controllers\Controller@produto']);

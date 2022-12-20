@@ -27,20 +27,20 @@ echo "<pre> Array Retornada:
 switch($resultado_busca['resultado']){
     case '2':
         $texto = "
-    Cidade com logradouro único
-    <b>Cidade: </b> ".$resultado_busca['cidade']."
-    <b>UF: </b> ".$resultado_busca['uf']."
+        Cidade com logradouro único
+        <b>Cidade: </b> ".$resultado_busca['cidade']."
+        <b>UF: </b> ".$resultado_busca['uf']."
         ";
     break;
 
     case '1':
         $texto = "
-    Cidade com logradouro completo
-    <b>Tipo de Logradouro: </b> ".$resultado_busca['tipo_logradouro']."
-    <b>Logradouro: </b> ".$resultado_busca['logradouro']."
-    <b>Bairro: </b> ".$resultado_busca['bairro']."
-    <b>Cidade: </b> ".$resultado_busca['cidade']."
-    <b>UF: </b> ".$resultado_busca['uf']."
+        Cidade com logradouro completo
+        <b>Tipo de Logradouro: </b> ".$resultado_busca['tipo_logradouro']."
+        <b>Logradouro: </b> ".$resultado_busca['logradouro']."
+        <b>Bairro: </b> ".$resultado_busca['bairro']."
+        <b>Cidade: </b> ".$resultado_busca['cidade']."
+        <b>UF: </b> ".$resultado_busca['uf']."
         ";
     break;
 
